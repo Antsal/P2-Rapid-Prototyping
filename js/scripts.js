@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  
-  // Good Stuff
+  $('#snowboarding').popover('hide');
+						 
   
 });	
