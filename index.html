@@ -8,13 +8,29 @@
     <link href="css/styles.css" rel="stylesheet" media="screen">
   </head>
   <body>
+  
+<div class="container">
  
+ <div class="row-fluid">
+
+<div class="span6 offset6">
+<form class="form-inline">
+  <input type="text" class="input-small" placeholder="Username">
+  <input type="password" class="input-small" placeholder="Password">
+  <label class="checkbox">
+    <input type="checkbox"> Remember me
+  </label>
+  <button type="submit" class="btn">Sign in</button>
+</form>
+</div>
+</div>
     <form class="form-search">
   <div class="input-prepend">
     <button type="submit" class="btn">Search</button>
     <input type="text" class="span2 search-query">
   </div>
 </form>
+
 <ul class="breadcrumb">
   <li><a href="#">Home</a> <span class="active divider">/</span></li>
   <li class="active">History <span class="divider">/</span></li>
@@ -22,10 +38,25 @@
   <li><a href="#">Safety</a></li>
 </ul>
 
+<div class="row-fluid">
+<div class="span2 offset10">
+<div class="btn-group">
+  <a class="btn btn-primary" href="#">Article Options</a>
+  <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="#">Edit</a></li>
+    <li><a href="#">Save</a></li>
+    <li><a href="#">Delete</a></li>
+  </ul>
+  
+			</div>
+		</div>
+	</div>
+
  <hr>
     <h1>Snowboarding</h1>
     <hr>
-	<p class="lead"><strong>Snowboarding</strong> is a winter sport that involves descending a slope that is covered with snow while standing on a board attached to a rider's feet, using a special boot set onto a mounted binding. The development of snowboarding was inspired by skateboarding, sledding, surfing and skiing. It was developed in the United States in the 1960s and became a Winter Olympic Sport in 1998. In 2002 competitive snowboarders formed the World Snowboard Tour.</p>
+	<p class="lead"><a href="#" data-trigger="hover" title="A winter sport that involves descending a slope that is covered with snow while standing on a board attached to a rider's feet, using a special boot set onto a mounted binding." id="snowboarding">Snowboarding</a> The development of snowboarding was inspired by skateboarding, sledding, surfing and skiing. It was developed in the United States in the 1960s and became a Winter Olympic Sport in 1998. In 2002 competitive snowboarders formed the World Snowboard Tour.</p>
 	
     
   
@@ -143,6 +174,26 @@ Some care is also required when waxing a board as fluorocarbon waxes emit toxic 
     <li><a href="#">3</a></li>
     <li><a href="#">Next</a></li>
   </ul>
+</div>
+
+<!-- Button to trigger modal -->
+<a href="#myModal" role="button" class="btn" data-toggle="modal">Feedback</a>
+ 
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+    <h3 id="myModalLabel">Comments</h3>
+  </div>
+  <div class="modal-body">
+    <input type="text" placeholder="Please leave a comment...">
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+    <button class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
 </div>
 
 	<script src="http://code.jquery.com/jquery.js"></script>
